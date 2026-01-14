@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 274868480047839967}
   - component: {fileID: 6487221762447355412}
-  - component: {fileID: 9094920138174254518}
+  - component: {fileID: 8646935145283491266}
   - component: {fileID: 2550745774735077554}
   - component: {fileID: 4949587106806858722}
-  - component: {fileID: 8496118578746922234}
-  - component: {fileID: 8646935145283491266}
+  - component: {fileID: 1734601026331618430}
+  - component: {fileID: 7380657917219075205}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751595532081987441}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -97,20 +97,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!114 &9094920138174254518
-MonoBehaviour:
+--- !u!61 &8646935145283491266
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751595532081987441}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a236dea1144c184fa38b337fc7b6b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  rb: {fileID: 2550745774735077554}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.02072525}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6, y: 0.2907009}
+  m_EdgeRadius: 0.1
 --- !u!50 &2550745774735077554
 Rigidbody2D:
   serializedVersion: 5
@@ -160,7 +192,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8496118578746922234
+--- !u!114 &1734601026331618430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,60 +201,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 751595532081987441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe7024308bf728439c2e7fee6d6eb17, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c8ee0990c3f4ea7891e79996c3a7932, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  tf: {fileID: 274868480047839967}
-  movement: {x: 0, y: 0}
-  animator: {fileID: 4949587106806858722}
-  spriteRenderer: {fileID: 6487221762447355412}
-  SpriteSheetName: chara_02
---- !u!61 &8646935145283491266
-BoxCollider2D:
+  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Player.PlayerMovement
+  moveSpeed: 5
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+--- !u!114 &7380657917219075205
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751595532081987441}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.02072525}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.6, y: 0.2907009}
-  m_EdgeRadius: 0.1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad65c21b3fa49709c3c67eb0e8c79de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Player.PlayerAppearance
+  characterType: 1
 --- !u!1 &3827978007989821098
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,15 +281,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.21681416
+    x: 0
     y: 0
-    width: 0.5663717
-    height: 0.99999994
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5625
+  orthographic size: 6.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -323,8 +319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
   m_AssetsPPU: 16
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_RefResolutionX: 384
+  m_RefResolutionY: 216
   m_CropFrame: 1
   m_GridSnapping: 0
   m_FilterMode: 1
