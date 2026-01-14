@@ -24,4 +24,4 @@ MonoBehaviour:
   retryWhenServerError: 1
   initFailWhenDeviceIdUnknown: 1
   autoLoadLocationProperties: 1
-  waitUntilInitializeFinish: 0
+  waitUntilInitializeFinish: 1

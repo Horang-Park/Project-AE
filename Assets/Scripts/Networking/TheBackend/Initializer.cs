@@ -1,16 +1,22 @@
-using UnityEngine;
+using BackEnd;
+using Horang.HorangUnityLibrary.Utilities;
 
-public class Initializer : MonoBehaviour
+namespace Networking.TheBackend
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static class Initializer
     {
-        
-    }
+        public static void BackendInitialize()
+        {
+            var bro = Backend.Initialize();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            if(bro.IsSuccess())
+            {
+                Log.Print($"뒤끝 초기화 완료 -> {bro}");
+            }
+            else
+            {
+                Log.Print($"뒤끝 초기화 실패 -> {bro}", LogPriority.Error);
+            }
+        }
     }
 }
