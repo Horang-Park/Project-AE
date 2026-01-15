@@ -7,11 +7,17 @@ namespace Pawn
         public float moveSpeed = 5f;
 
         protected Vector2 MoveVector;
-        protected Rigidbody2D Rigidbody2D;
+
+        private Rigidbody2D _rigidbody2D;
 
         protected virtual void Awake()
         {
-            Rigidbody2D = GetComponent<Rigidbody2D>();
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+        }
+
+        private void FixedUpdate()
+        {
+            _rigidbody2D.MovePosition(_rigidbody2D.position + MoveVector * (moveSpeed * Time.fixedDeltaTime));
         }
     }
 }

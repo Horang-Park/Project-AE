@@ -30,10 +30,5 @@ namespace Pawn.Player
         {
             MoveVector =  _moveAction.ReadValue<Vector2>();
         }
-
-        private void FixedUpdate()
-        {
-            Rigidbody2D.MovePosition(Rigidbody2D.position + MoveVector * (moveSpeed * Time.fixedDeltaTime));
-        }
     }
 }
