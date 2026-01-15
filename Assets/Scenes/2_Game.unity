@@ -203,11 +203,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &751595533210838139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6396571824628222273, guid: 574dca5f5dc179d4f8b5abaac2c5dfc5, type: 3}
-  m_PrefabInstance: {fileID: 8501344380971688269}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1130620649207234507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -317,10 +312,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2550745774735077554, guid: 26f8c5f729ee7d54cab9fbe1886a7c90, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -374,10 +365,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5586858359125238506, guid: 574dca5f5dc179d4f8b5abaac2c5dfc5, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6396571824628222273, guid: 574dca5f5dc179d4f8b5abaac2c5dfc5, type: 3}
       propertyPath: m_Name
       value: 1_Green Slime
@@ -385,25 +372,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6396571824628222273, guid: 574dca5f5dc179d4f8b5abaac2c5dfc5, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 8646935146336849610}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 574dca5f5dc179d4f8b5abaac2c5dfc5, type: 3}
---- !u!114 &8646935146336849610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751595533210838139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ef354bde63761e4f8f3a283be6cca6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Enemy.MonsterMovement
-  moveSpeed: 2
-  stopRange: 1.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

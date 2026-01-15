@@ -1,4 +1,3 @@
-using Horang.HorangUnityLibrary.Utilities;
 using UnityEngine;
 
 namespace Pawn.Enemy
@@ -19,8 +18,6 @@ namespace Pawn.Enemy
         private void Update()
         {
             var magnitude = (_targetTransform.position - transform.position).magnitude;
-
-            Log.Print($"{magnitude}");
 
             if (magnitude <= stopRange)
             {
