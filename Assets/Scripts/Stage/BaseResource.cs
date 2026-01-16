@@ -7,13 +7,11 @@ namespace Stage
 {
     public abstract class BaseResource : MonoBehaviour
     {
-        public Sprite[] s;
-
         [SerializeField] private ResourceType resourceType = ResourceType.None;
 
         private Tilemap _tilemap;
 
-        public void RemoveResourceTile(Vector2 contactPoint, Vector3 playerDirection, Action<ResourceType> onRemoved)
+        public virtual void RemoveResourceTile(Vector2 contactPoint, Vector3 playerDirection, Action<ResourceType> onRemoved)
         {
             var tilePosition = _tilemap.layoutGrid.WorldToCell(contactPoint);
             var targetTile = _tilemap.GetTile(tilePosition);

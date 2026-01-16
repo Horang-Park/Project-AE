@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using GlobalData;
 using UnityEngine;
 
 namespace Stage
 {
-    public class TreeResource : BaseResource
+    public class StoneResource : BaseResource
     {
         public override void RemoveResourceTile(Vector2 contactPoint, Vector3 playerDirection, Action<ResourceType> onRemoved)
         {

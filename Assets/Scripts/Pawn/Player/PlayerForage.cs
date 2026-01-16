@@ -4,7 +4,7 @@ using Stage;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Pawn.Player.ResourceForage
+namespace Pawn.Player
 {
     public class PlayerForage : MonoBehaviour
     {
