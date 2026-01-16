@@ -59,7 +59,7 @@ namespace Pawn.Player.ResourceForage
                 return;
             }
 
-            resource.RemoveResourceTile(hit.point, Foraged);
+            resource.RemoveResourceTile(hit.centroid, direction, Foraged);
         }
 
         private void Foraged(ResourceType resourceType)
