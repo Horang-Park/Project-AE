@@ -6,6 +6,7 @@ namespace Pawn.Player
     public class PlayerMovement : Movement
     {
         public InputActionAsset inputActions;
+        public Vector2 moveDirection;
 
         private InputAction _moveAction;
 
@@ -29,6 +30,7 @@ namespace Pawn.Player
         private void Update()
         {
             MoveVector =  _moveAction.ReadValue<Vector2>();
+            moveDirection = _moveAction.ReadValue<Vector2>();
         }
     }
 }

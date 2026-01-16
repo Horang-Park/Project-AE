@@ -17,10 +17,11 @@ namespace Pawn
 
         protected abstract void LoadSpriteSheet();
 
-        private void Awake()
+        protected virtual void Awake()
         {
-            _animator = this.GetComponent<Animator>();
-            SpriteRenderer = this.GetComponent<SpriteRenderer>();
+            SpriteRenderer = GetComponent<SpriteRenderer>();
+
+            _animator = GetComponent<Animator>();
 
             _previousPosition = transform.position;
         }

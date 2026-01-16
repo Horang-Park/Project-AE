@@ -2,7 +2,7 @@
 
 namespace GlobalData
 {
-    public enum PlayerCharacterTypes
+    public enum PlayerCharacterType
     {
         None,
         [Description("1_The Assassin")]    Assassin,
@@ -11,5 +11,12 @@ namespace GlobalData
         [Description("4_The Sorceress")]   Sorceress,
         [Description("5_The Archer")]      Archer,
         [Description("6_The Fighter")]     Fighter,
+    }
+
+    public enum ResourceType
+    {
+        None,
+        Tree,
+        Stone,
     }
 }
