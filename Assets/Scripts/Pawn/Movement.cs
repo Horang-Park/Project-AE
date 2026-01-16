@@ -4,7 +4,7 @@ namespace Pawn
 {
     public abstract class Movement : MonoBehaviour
     {
-        public float moveSpeed = 5f;
+        public float moveSpeed = 5.0f;
 
         protected Vector2 MoveVector;
 

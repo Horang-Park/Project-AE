@@ -1,4 +1,4 @@
-﻿using GlobalData;
+using GlobalData;
 using Horang.HorangUnityLibrary.Utilities;
 using Stage;
 using UnityEngine;
@@ -12,7 +12,6 @@ namespace Pawn.Player.ResourceForage
 
         private InputAction _interactAction;
         private PlayerMovement _playerMovement;
-        private Ray2D[] _ray2Ds;
 
         private void OnEnable()
         {
