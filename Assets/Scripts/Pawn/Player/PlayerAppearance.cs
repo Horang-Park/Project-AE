@@ -19,7 +19,7 @@ namespace Pawn.Player
 
         protected override void LoadSpriteSheet()
         {
-            const string specificSpriteFolderPath = "Sprites/Player Sprite Sheets";
+            const string specificSpriteFolderPath = "Sprites/Player Spritesheets";
             var currentCharacter = _characterType.ToDescription();
             var sprites = Resources.LoadAll<Sprite>($"{specificSpriteFolderPath}/{currentCharacter}/spritesheet");
 

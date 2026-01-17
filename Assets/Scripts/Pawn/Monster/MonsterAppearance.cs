@@ -8,7 +8,7 @@ namespace Pawn.Enemy
     {
         protected override void LoadSpriteSheet()
         {
-            const string specificSpriteFolderPath = "Sprites/Monster Sprite Sheets";
+            const string specificSpriteFolderPath = "Sprites/Monster Spritesheets";
             var sprites = Resources.LoadAll<Sprite>($"{specificSpriteFolderPath}/{gameObject.name}/spritesheet");
 
             if (sprites.Length < 1)
