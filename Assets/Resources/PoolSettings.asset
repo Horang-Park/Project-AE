@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba58c424296d2740afc4322d5c00c3f, type: 3}
+  m_Name: PoolSettings
+  m_EditorClassIdentifier: Assembly-CSharp::Pool.PoolSettings
+  poolSettings:
+  - poolName: Sword
+    prefab: {fileID: 6046846561819925254, guid: 2087dfa5ae8c9f144a669a27a1e3055c, type: 3}
+    defaultCapacity: 30
+    maxSize: 100
+    preloadCount: 10
+  - poolName: Axe
+    prefab: {fileID: 7888092099555289227, guid: 53416c9eec493624f9da6019c281dbcd, type: 3}
+    defaultCapacity: 30
+    maxSize: 100
+    preloadCount: 10
+  - poolName: Hammer
+    prefab: {fileID: 7888092099555289227, guid: 89c047bc1c0823a4c96b1be873926367, type: 3}
+    defaultCapacity: 30
+    maxSize: 100
+    preloadCount: 10
+  - poolName: Scythe
+    prefab: {fileID: 7888092099555289227, guid: 7ec3a73adf3ecfe48beefe25d9f432ea, type: 3}
+    defaultCapacity: 30
+    maxSize: 100
+    preloadCount: 10
+  - poolName: Spear
+    prefab: {fileID: 7888092099555289227, guid: ab0202571d279bb44b843a2050ab89fa, type: 3}
+    defaultCapacity: 30
+    maxSize: 100
+    preloadCount: 10
+  - poolName: Trident
+    prefab: {fileID: 7888092099555289227, guid: 3c6f9ca48664b6242adef0ebed6e248d, type: 3}
+    defaultCapacity: 30
+    maxSize: 100
+    preloadCount: 10
+  - poolName: Level 1 Exp Orb
+    prefab: {fileID: 6423614626555435193, guid: 742886d48fb1949468ee1087baf2a796, type: 3}
+    defaultCapacity: 100
+    maxSize: 300
+    preloadCount: 50
+  - poolName: Level 2 Exp Orb
+    prefab: {fileID: 3668656917751232106, guid: ab56af0db9afd5a40b0d420d8715c470, type: 3}
+    defaultCapacity: 100
+    maxSize: 300
+    preloadCount: 50
+  - poolName: Level 3 Exp Orb
+    prefab: {fileID: 4668047787790114855, guid: 03a09e14e0ccaa2489773e09b20565ca, type: 3}
+    defaultCapacity: 100
+    maxSize: 300
+    preloadCount: 50

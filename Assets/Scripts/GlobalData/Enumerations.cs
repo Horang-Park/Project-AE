@@ -5,12 +5,12 @@ namespace GlobalData
     public enum PlayerCharacterType
     {
         None,
-        [Description("1_The Assassin")]    Assassin,
-        [Description("2_The Warrior")]     Warrior,
-        [Description("3_The Paladin")]     Paladin,
-        [Description("4_The Sorceress")]   Sorceress,
-        [Description("5_The Archer")]      Archer,
-        [Description("6_The Fighter")]     Fighter,
+        [Description("1_The Guardian")]    Guardian,
+        [Description("2_The Berserker")]   Berserker,
+        [Description("3_The War Smith")]   WarSmith,
+        [Description("4_The Reaper")]      Reaper,
+        [Description("5_The Lancer")]      Lancer,
+        [Description("6_The Gladiator")]   Gladiator,
     }
 
     public enum ResourceType

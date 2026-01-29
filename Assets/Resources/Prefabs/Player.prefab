@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4949587106806858722}
   - component: {fileID: 1734601026331618430}
   - component: {fileID: 7380657917219075205}
-  - component: {fileID: 8050503670082196007}
   - component: {fileID: 853861920880379541}
   m_Layer: 6
   m_Name: Player
@@ -220,18 +219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad65c21b3fa49709c3c67eb0e8c79de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawn.Player.PlayerAppearance
---- !u!114 &8050503670082196007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751595532081987441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 959f9984405f4d1b9c199c9400766bec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Player.PlayerAttack
 --- !u!114 &853861920880379541
 MonoBehaviour:
   m_ObjectHideFlags: 0

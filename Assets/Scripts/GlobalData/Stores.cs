@@ -2,6 +2,6 @@
 {
     public static class Stores
     {
-        public static PlayerCharacterType CurrentPlayerCharacterType =  PlayerCharacterType.Assassin;
+        public static PlayerCharacterType CurrentPlayerCharacterType =  PlayerCharacterType.Guardian;
     }
 }
