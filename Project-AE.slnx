@@ -1,0 +1,8 @@
+﻿<Solution>
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="DOTween.Modules.csproj" />
+  <Project Path="DOTweenPro.EditorScripts.csproj" />
+  <Project Path="DOTweenPro.Scripts.csproj" />
+  <Project Path="FangAutoTile.csproj" />
+  <Project Path="FangAutoTile.Editor.csproj" />
+</Solution>
