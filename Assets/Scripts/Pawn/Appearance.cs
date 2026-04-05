@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Pawn
@@ -8,9 +10,9 @@ namespace Pawn
         private static readonly int SpeedAnimatorKey = Animator.StringToHash("speed");
         private static readonly int OrientationAnimatorKey = Animator.StringToHash("orientation");
 
-        protected Dictionary<string, Sprite> CurrentSpriteSheets;
-        protected SpriteRenderer SpriteRenderer;
-
+        private Dictionary<string, Sprite> _currentSpriteSheets;
+        private SpriteRenderer _spriteRenderer;
+        
         private Animator _animator;
         private Vector2 _moveVector;
         private Vector2 _previousPosition;
@@ -19,11 +21,24 @@ namespace Pawn
 
         protected virtual void Awake()
         {
-            SpriteRenderer = GetComponent<SpriteRenderer>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
 
             _animator = GetComponent<Animator>();
 
             _previousPosition = transform.position;
+        }
+
+        protected void LoadAndSetSpriteSheets(string loadFinalPath)
+        {
+            var sprites = Resources.LoadAll<Sprite>(loadFinalPath);
+
+            if (sprites.Length < 1)
+            {
+                throw new NullReferenceException($"Could not load spritesheet -> {loadFinalPath}");
+            }
+
+            _currentSpriteSheets = sprites.ToDictionary(x => x.name, x => x);
+            _spriteRenderer.sprite = sprites[0];
         }
 
         private void Start()
@@ -46,7 +61,7 @@ namespace Pawn
 
         private void LateUpdate()
         {
-            SpriteRenderer.sprite = CurrentSpriteSheets[SpriteRenderer.sprite.name];
+            _spriteRenderer.sprite = _currentSpriteSheets[_spriteRenderer.sprite.name];
         }
 
         private void UpdateAnimation()

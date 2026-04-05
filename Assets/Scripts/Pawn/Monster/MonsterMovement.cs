@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Pawn.Enemy
+namespace Pawn.Monster
 {
     public class MonsterMovement : Movement
     {

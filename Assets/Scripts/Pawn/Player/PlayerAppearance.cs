@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using GlobalData;
-using UnityEngine;
+﻿using GlobalData;
 using Utilities;
 
 namespace Pawn.Player
@@ -20,16 +17,11 @@ namespace Pawn.Player
         protected override void LoadSpriteSheet()
         {
             const string specificSpriteFolderPath = "Sprites/Player Spritesheets";
+            
             var currentCharacter = _characterType.ToDescription();
-            var sprites = Resources.LoadAll<Sprite>($"{specificSpriteFolderPath}/{currentCharacter}/spritesheet");
-
-            if (sprites.Length < 1)
-            {
-                throw new NullReferenceException($"Could not load spritesheet -> {specificSpriteFolderPath}/{currentCharacter}/spritesheet.");
-            }
-
-            CurrentSpriteSheets = sprites.ToDictionary(x => x.name, x => x);
-            SpriteRenderer.sprite = sprites[0];
+            var finalPath = $"{specificSpriteFolderPath}/{currentCharacter}/spritesheet";
+            
+            LoadAndSetSpriteSheets(finalPath);
         }
     }
 }
