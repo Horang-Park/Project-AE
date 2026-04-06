@@ -19,7 +19,7 @@ namespace Pawn.Monster
 
         public ScriptableObject.Stat.Monster.MonsterStat Get(MonsterType monsterType)
         {
-            if (monsterType.Equals(_previousStat.monsterType))
+            if (_previousStat is not null && monsterType.Equals(_previousStat.monsterType))
             {
                 return _previousStat;
             }

@@ -17,16 +17,16 @@ namespace Pawn.Monster
             _monsterAppearance = gameObject.AddComponent<MonsterAppearance>();
             _monsterMovement = gameObject.AddComponent<MonsterMovement>();
 
-            var scriptable = Resources.Load<ScriptableObject.Stat.Monster>("ScriptableObjects/MonsterStats");
+            var scriptable = Resources.Load<UnityEngine.ScriptableObject>("Scriptables/MonsterStats");
 
-            if (scriptable == null)
+            if (scriptable == null || scriptable is not ScriptableObject.Stat.Monster monster)
             {
                 Log.Print("Could not load monster stats!", LogPriority.Error);
 
                 return;
             }
             
-            _monsterStatProvider = new MonsterStatProvider(scriptable);
+            _monsterStatProvider = new MonsterStatProvider(monster);
         }
 
         private void OnEnable()
