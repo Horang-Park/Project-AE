@@ -7,10 +7,10 @@ using UnityEngine.Pool;
 
 namespace Pool
 {
-    public class PoolManager : MonoSingleton<PoolManager>
+    public abstract class PoolManager : MonoSingleton<PoolManager>
     {
         [Header("Configuration")]
-        [SerializeField] private PoolSettings settings;
+        [SerializeField] private PoolSettings _settings;
         [Header("Global Settings")]
         [SerializeField] private bool collectionCheck = true;
         [SerializeField] private bool organizeHierarchy = true;
@@ -25,7 +25,7 @@ namespace Pool
 
         private void InitializePools()
         {
-            foreach (var setting in settings.poolSettings.Where(setting => setting.prefab != null))
+            foreach (var setting in _settings.poolSettings.Where(setting => setting.prefab != null))
             {
                 CreatePool(setting.prefab, setting.defaultCapacity, setting.maxSize);
             
@@ -216,6 +216,7 @@ namespace Pool
         private GameObject OnCreatePoolItem(GameObject prefab, Transform parent)
         {
             var obj = Instantiate(prefab);
+            obj.name = prefab.name;
         
             if (organizeHierarchy && parent != null)
             {

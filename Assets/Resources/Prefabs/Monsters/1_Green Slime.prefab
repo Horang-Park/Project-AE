@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 5586858359125238506}
   - component: {fileID: 1459059611117701199}
   - component: {fileID: 7772023420798986812}
-  - component: {fileID: 375806801266562669}
-  - component: {fileID: 7394292015512779205}
+  - component: {fileID: 3513718980752010143}
   m_Layer: 7
   m_Name: 1_Green Slime
   m_TagString: Monster
@@ -191,7 +190,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &375806801266562669
+--- !u!114 &3513718980752010143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,20 +199,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6396571824628222273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ef354bde63761e4f8f3a283be6cca6e, type: 3}
+  m_Script: {fileID: 11500000, guid: e354f8abcacf450a8685e18b91ab3f0a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Enemy.MonsterMovement
-  moveSpeed: 1
-  stopRange: 1.5
---- !u!114 &7394292015512779205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396571824628222273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ac78eebc6b973a47a6ae387e002d905, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Enemy.MonsterAppearance
+  m_EditorClassIdentifier: Assembly-CSharp::Pawn.Monster.Monster
+  monsterType: 1

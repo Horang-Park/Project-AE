@@ -4,8 +4,17 @@ namespace Pawn.Monster
 {
     public class MonsterMovement : Movement
     {
-        public float stopRange = 1.0f;
-
+        public float Speed
+        {
+            set => moveSpeed = value;
+        }
+        
+        public float StopRange
+        {
+            set => _stopRange = value;
+        }
+        
+        private float _stopRange = 1.0f;
         private Transform _targetTransform;
 
         protected override void Awake()
@@ -19,7 +28,7 @@ namespace Pawn.Monster
         {
             var magnitude = (_targetTransform.position - transform.position).magnitude;
 
-            if (magnitude <= stopRange)
+            if (magnitude <= _stopRange)
             {
                 MoveVector = Vector2.zero;
 

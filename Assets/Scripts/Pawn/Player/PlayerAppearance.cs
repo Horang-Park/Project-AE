@@ -11,7 +11,7 @@ namespace Pawn.Player
         {
             base.Awake();
 
-            _characterType = Stores.CurrentPlayerCharacterType;
+            _characterType = Models.Models.CurrentPlayerCharacterType;
         }
 
         protected override void LoadSpriteSheet()

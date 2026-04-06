@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba58c424296d2740afc4322d5c00c3f, type: 3}
+  m_Name: MonsterPoolSettings
+  m_EditorClassIdentifier: Assembly-CSharp::Pool.PoolSettings
+  poolSettings:
+  - poolName: 1_Green Slime
+    prefab: {fileID: 6396571824628222273, guid: 574dca5f5dc179d4f8b5abaac2c5dfc5, type: 3}
+    defaultCapacity: 50
+    maxSize: 200
+    preloadCount: 30

@@ -13,6 +13,12 @@ namespace Models
         [Description("6_The Gladiator")]   Gladiator,
     }
 
+    public enum MonsterType
+    {
+        None,
+        [Description("1_Green Slime")]     GreenSlime,
+    }
+
     public enum ResourceType
     {
         None,
