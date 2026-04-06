@@ -1,5 +1,5 @@
 using System;
-using GlobalData;
+using Models;
 using UnityEngine;
 
 namespace Stage

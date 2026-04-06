@@ -1,4 +1,4 @@
-﻿namespace GlobalData
+﻿namespace Models
 {
     public static class Stores
     {

@@ -1,4 +1,4 @@
-﻿using GlobalData;
+﻿using Models;
 using Utilities;
 
 namespace Pawn.Player

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace GlobalData
+namespace Models
 {
     public enum PlayerCharacterType
     {
